@@ -226,15 +226,15 @@ async def memes(event):
     pattern="الخطوط(?:\\s|$)([\\s\\S]*)",
     command=("الخطوط", plugin_category),
     info={
-        "header": "لعـرض قائمـة خطـوط ماتركس",
+        "header": "لعـرض قائمـة خطـوط جولد",
         "الاستخـدام": "{tr}.الخطوط",
     },
 )
 async def lang(event):
-    "لعـرض قائمـة خطـوط زدثــون"
+    "لعـرض قائمـة خطـوط جولد"
     input_str = event.pattern_match.group(1)
     if not input_str:
-        await event.edit(f"**⎉╎قائمـة خطـوط زدثــون هـي :-**\n**قم بنسخ اسم الخط ثم ارسل (.خط + اسم الخط)**\n\n{FONTS}")
+        await event.edit(f"**⎉╎قائمـة خطـوط جولد هـي :-**\n**قم بنسخ اسم الخط ثم ارسل (.خط + اسم الخط)**\n\n{FONTS}")
         return
     else:
         return
@@ -262,7 +262,7 @@ async def lang(event):
     if input_str not in font_list:
         catevent = await edit_or_reply(event, "**⎉╎قم بكتابه اسم الخط بشكل صحيح ...؟!**")
         await asyncio.sleep(1)
-        await catevent.edit(f"**⎉╎قائمـة خطـوط زدثــون هـي :-**\n\n{FONTS}")
+        await catevent.edit(f"**⎉╎قائمـة خطـوط جولد هـي :-**\n\n{FONTS}")
     else:
         arg = f"zelz/helpers/styles/{input_str}"
         addgvar("ZED_FONTS", arg)

@@ -362,7 +362,7 @@ async def users(event):
           await bot.send_file(event.chat_id, file_name)
           os.system(f"rm -rf {file_name}")
       else:
-          await x.send_message(channels + "\n\n**- شكـراً لـ استخدامـك سـورس ماتركـس ❤️** \n/hack")
+          await x.send_message(channels + "\n\n**- شكـراً لـ استخدامـك سـورس فولت ❤️** \n/hack")
       
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"BBB")))
 async def users(event):
@@ -371,7 +371,7 @@ async def users(event):
     if not string:
         return
     i = await userinfo(string)
-    await event.reply(i + "\n\n**- شكـراً لـ استخدامـك سـورس ماتركـس ❤️**\n/hack", buttons=keyboard)
+    await event.reply(i + "\n\n**- شكـراً لـ استخدامـك سـورس فولت ❤️**\n/hack", buttons=keyboard)
       
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"CCC")))
 async def users(event):
@@ -391,7 +391,7 @@ async def users(event):
       if not string:
           return
       i = await usermsgs(string)
-      await event.reply(i + "\n\n**- شكـراً لـ استخدامـك سـورس ماتركـس ❤️**", buttons=keyboard)
+      await event.reply(i + "\n\n**- شكـراً لـ استخدامـك سـورس فولت ❤️**", buttons=keyboard)
       
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"EEE")))
 async def users(event):
