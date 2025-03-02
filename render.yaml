@@ -1,15 +1,15 @@
 databases:
-  - name: hussein
+  - name: seif
     ipAllowList: []
     region: frankfurt
     plan: free
 services:
   - type: web
     plan: free
-    name: joker
+    name: volt
     env: python
     buildCommand: pip install -U -r requirements.txt
-    startCommand: python3 ser.py & python3 -m JoKeRUB
+    startCommand: python3 server.py & python3 -m zelz
     region: frankfurt
     envVars:
       - key: ALIVE_NAME
@@ -30,6 +30,6 @@ services:
         value: Asia/Baghdad 
       - key: DATABASE_URL
         fromDatabase:
-          name: hussein
+          name: seif
           property: connectionString   
     autoDeploy: false
